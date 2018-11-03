@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.buttonz {
+  background-color: black;
+  color: white;
+  padding: 9px;
+  border-radius: 5px;
+  box-shadow: 9px	#FFFFFF;
+  text-transform: capitalize;
+  font-family: 'Rawhide Raw 2012';
+  font-weight: normal;
+  font-style: normal;
+  font-size: large;
+  position: relative;
+  right: 150px;
+  bottom: 40px;
+}
+
+.buttonz:hover {
+  background-color: #4CAF50;
+}
+
+.buttonz:active {
+  box-shadow: 5px #666;
+  transform: translateY(4px);
+}
+
+.sliderz {
+  -webkit-appearance: none;
+  height: 20px;
+  border-radius: 5px;   
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  position: relative;
+  left: 50px;
+  top: -70px;
+}
+
+.sliderz::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('assets/c.png');
+  background-size: contain;
+    cursor: pointer;
+}
+
+.sliderz::-moz-range-thumb {
+    width: 23px;
+    height: 25px;
+    border: 0;
+    background: url('assets/c.png');
+  background-size: contain;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Rawhide Raw 2012';
+    src: url('Rawhide-Raw-2012.woff2') format('woff2'),
+        url('Rawhide-Raw-2012.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
