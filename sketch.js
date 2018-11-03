@@ -14,8 +14,12 @@ function preload() {
   charli = loadImage('assets/CHARLI.png');
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(500, 500, WEBGL);
+  createCanvas(windowWidth,windowHeight,WEBGL);
   song.setVolume(0.2);
   button = createButton("play");
   button.addClass('buttonz');

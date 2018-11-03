@@ -2,10 +2,27 @@ html, body {
   margin: 0;
   padding: 0;
   color: #FFFFFF;
+  background-color: black;
 }
+
+.loadingclass {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.loadingclass img {
+   -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .buttonz {
   background-color: black;
+  outline: none;
   color: white;
   padding: 9px;
   border-radius: 5px;
@@ -15,7 +32,7 @@ html, body {
   font-weight: normal;
   font-style: normal;
   font-size: large;
-  position: relative;
+  position: absolute;
   right: 150px;
   bottom: 40px;
 }
@@ -36,9 +53,9 @@ html, body {
   outline: none;
   -webkit-transition: .2s;
   transition: opacity .2s;
-  position: relative;
+  position: absolute;
   left: 50px;
-  top: -70px;
+  top: 70px;
 }
 
 .sliderz::-webkit-slider-thumb {
